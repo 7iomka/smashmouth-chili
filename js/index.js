@@ -2,6 +2,13 @@
 See http://www.greensock.com/splittext/ for details.
 This demo uses SplitText which is a membership benefit of Club GreenSock, http://www.greensock.com/club/
 */
+$(function(){
+
+// jQuery methods go here...
+
+
+
+
 var mySplitText = new SplitText("#quote", {type:"chars,words, lines"}),
     tl = new TimelineLite();
 
@@ -20,3 +27,7 @@ tl.staggerTo(mySplitText.chars, 2, {css:{transformOrigin:"20% 20% -40px", rotati
 function getRandomInt (min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
 }
+
+
+
+});
