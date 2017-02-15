@@ -2,10 +2,11 @@ body{
   font-family: 'Asap', Arial, Helvetica, sans-serif;
   color:white;
   background:black url(http://s.cdpn.io/16327/texture_bg.jpg) no-repeat 50% 0px;
-  overflow:hidden;
+  /*overflow:hidden;*/
 }
 
 #circle{
+  display: inline-block;
   width:100px;
   height:100px;
         -moz-animation-duration: 3s;
@@ -67,6 +68,7 @@ h1{
 }*/
 
 #star, #star2 {
+  display: inline-block;
    visibility:hidden;
 }
 
@@ -127,7 +129,14 @@ img{
 
 
 
-svg{
-  margin-left: 90px;
-  padding-bottom: 50px;
+svg {
+  max-height: 300px;
+
+  margin: 0 auto; /* poor attempt at centering */
+
+  height: auto !important; /* overrides inline */
+  width: auto !important; /* overrides inline */
+
+  max-width: 300px;
+  display: block;
 }
