@@ -4,7 +4,10 @@ body{
   background:black url(http://s.cdpn.io/16327/texture_bg.jpg) no-repeat 50% 0px;
   /*overflow:hidden;*/
 }
-
+button {
+  background-color: black !important;
+  color:silver !important;
+}
 #circle{
   display: inline-block;
   width:100px;
